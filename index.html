@@ -1,0 +1,295 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>CSS Task 6</title>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ </head>
+
+<style type="text/css">
+    * {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.box {
+  width: 0%;
+  height: 620px;
+  background: white;
+  position: absolute;
+  animation: Box 1s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+
+.img {
+  width: 600px;
+  left: 100px;
+  top: 80px;
+  position: absolute;
+  opacity: 0;
+  animation: img 1s ease-in-out forwards;
+  animation-delay: 1.2s;
+    
+}
+
+.img img{
+  height: 300px;
+  width: 300px;
+}
+
+.review_box {
+  width: 320px;
+  height: 100px;
+  position: absolute;
+  left: 120px;
+  bottom: 75px;
+}
+
+.review_link {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  animation: link 1s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation-delay: 1.2s;
+
+}
+        
+      
+.review_link a {
+  margin-left: 25px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #2e8b57;
+  font-weight: bold;
+
+}
+
+.review_link a:hover{
+  color: #006400;
+}
+      
+  
+
+.container_1 {
+  width: 0px;
+  height: 430px;
+  background: #74c365;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  justify-content: center;
+  animation: container_one 1s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+
+.container_2 {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: container_two 1s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.container_box {
+  width: 100%;
+}
+
+.container_box h2 {
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+          
+.container_box p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: justify;
+
+}
+        
+
+        
+        
+      
+    
+
+    .button {
+      width: 500px;
+      height: 100px;
+      bottom: 50px;
+      right: -50px;
+      position: absolute;
+    }
+
+      .button .btn {
+        width: 240px;
+        height: 70%;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        transition: ease-in-out 220ms;
+        cursor: pointer;
+      }
+
+      .button .signup {
+        border: 2px solid #2e8b57;
+        color: #2e8b57;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        animation: signup 1s cubic-bezier(.74, .06, .4, .92) forwards;
+        animation-delay: 1s;
+}
+        .button .signup:hover {
+          background: #2e8b57;
+          color: white;
+        }
+      
+
+      .button .login {
+        border: none;
+        background: #2e8b57;
+        color: white;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        animation: login 1s cubic-bezier(.74, .06, .4, .92) forwards;
+        animation-delay: 1s;
+      }
+
+      
+@keyframes Box {
+  0% {
+    width: 0px;
+    left: 15%;
+  }
+  100% {
+    width: 1000px;
+    left: 15%;
+  }
+}
+
+@keyframes img {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes link {
+  0% {
+    opacity: 0;
+    bottom: -20px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+@keyframes container_one {
+  0% {
+    width: 0px;
+    left: 550px;
+  }
+  100% {
+    width: 500px;
+    left: 550px;
+  }
+}
+
+@keyframes container_two {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes signup {
+  0% {
+    opacity: 0;
+    bottom: -25px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes login {
+  0% {
+    opacity: 0;
+    bottom: -25px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+
+</style>
+
+
+ <body>
+     <div class="container">
+        <div class="box">
+            <div class="img">
+                <img src="clock.png">
+            </div>
+
+            <div class="review_box">
+                <div class="review_link">
+                   
+                   <a href="#">Click Here to write a Review</a>
+                </div>
+            </div>
+
+            <div class="container_1">
+                <div class="container_2">
+                    <div class="container_box">
+                        <h2>Campus{X}</h2><br>
+                        
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <div class="button">
+                <button class="btn signup">Sign UP</button>
+                <button class="btn login">Login</button>
+            </div>
+        </div>
+    </div>
+
+ </body>
+ </html>
+
+
+
+
