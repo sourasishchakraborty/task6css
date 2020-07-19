@@ -4,7 +4,7 @@ Build a Web page using CSS Animations & Transitions
 
 ### Link to view:
 
-https://sourasishchakraborty.github.io/task6css/index.html
+https://sourasishchakraborty.github.io/task6css/
 
 ### Snapshots
 
